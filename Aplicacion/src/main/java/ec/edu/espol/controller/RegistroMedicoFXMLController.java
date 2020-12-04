@@ -28,7 +28,7 @@ import javafx.scene.text.Text;
 /**
  * FXML Controller class
  *
- * @author gabrielaramos
+ * @author dilan
  */
 public class RegistroMedicoFXMLController implements Initializable {
 

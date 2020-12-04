@@ -19,7 +19,7 @@ import javafx.scene.input.MouseEvent;
 /**
  * FXML Controller class
  *
- * @author gabrielaramos
+ * @author dilan
  */
 public class PuestoFXMLController implements Initializable {
 

@@ -29,7 +29,7 @@ import javafx.scene.text.TextAlignment;
 /**
  * FXML Controller class
  *
- * @author gabrielaramos
+ * @author dilan
  */
 public class AtencionFXMLController implements Initializable {
 
