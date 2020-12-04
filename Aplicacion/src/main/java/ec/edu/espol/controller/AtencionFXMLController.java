@@ -11,6 +11,7 @@ import ec.edu.espol.model.listas.CircularDoublyLinkedList;
 import ec.edu.espol.model.util.Reloj;
 import ec.edu.espol.model.Turno;
 import java.net.URL;
+import java.nio.file.Paths;
 import java.util.Iterator;
 import java.util.Queue;
 import java.util.ResourceBundle;
@@ -57,7 +58,7 @@ public class AtencionFXMLController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         reloj = new Reloj(tiempo);
         reloj.start();
-        //reproducirVideos(it);
+        reproducirVideos(it);
         vBoxTurno.getChildren().clear();
         vBoxPuesto.getChildren().clear();
         while(!puestos.isEmpty()){
@@ -81,13 +82,14 @@ public class AtencionFXMLController implements Initializable {
     
      public void reproducirVideos(Iterator it) {
         String url = it.next().toString();
-        Media media = new Media(url);
+        Media media = new Media(Paths.get(url).toUri().toString());
         MediaPlayer player = new MediaPlayer(media);
         player.setAutoPlay(true);
+        player.setVolume(0);
         player.setOnEndOfMedia(() -> {
             reproducirVideos(it);
         });
-        ventanaVideo.setMediaPlayer(player);    
+        ventanaVideo.setMediaPlayer(player);  
     }
     
     public Reloj reloj(){   
