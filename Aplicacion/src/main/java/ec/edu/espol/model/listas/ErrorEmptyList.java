@@ -11,7 +11,7 @@ package ec.edu.espol.model.listas;
 
 /**
  *
- * @author gabrielaramos
+ * @author dilan
  */
 public class ErrorEmptyList extends Exception {
     int tam;

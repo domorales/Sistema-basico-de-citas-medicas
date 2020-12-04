@@ -11,7 +11,7 @@ import java.util.Map;
 
 /**
  *
- * @author gabrielaramos
+ * @author dilan
  */
 public class Medico extends Usuario{
     private String especialidad;

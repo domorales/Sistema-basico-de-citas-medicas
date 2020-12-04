@@ -16,7 +16,7 @@ import java.util.LinkedList;
 
 /**
  *
- * @author gabrielaramos
+ * @author dilan
  */
 public class Turno implements Serializable {
     private String codigo;

@@ -7,7 +7,7 @@ package ec.edu.espol.model;
 
 /**
  *
- * @author gabrielaramos
+ * @author dilan
  */
 public class Paciente extends Usuario {
     private int edad;

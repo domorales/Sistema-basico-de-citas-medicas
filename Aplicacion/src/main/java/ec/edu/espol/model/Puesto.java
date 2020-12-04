@@ -20,7 +20,7 @@ import java.util.Queue;
 
 /**
  *
- * @author gabrielaramos
+ * @author dilan
  */
 public class Puesto implements Serializable {
     private int codigo;

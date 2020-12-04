@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  *
- * @author gabrielaramos
+ * @author dilan
  */
 public class Sintoma  implements Serializable{
     private String nombre;

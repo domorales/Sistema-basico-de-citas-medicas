@@ -13,7 +13,7 @@ import java.io.FileReader;
 
 /**
  *
- * @author gabrielaramos 
+ * @author dilan
  */
 public class Video {
     private String nombre;
