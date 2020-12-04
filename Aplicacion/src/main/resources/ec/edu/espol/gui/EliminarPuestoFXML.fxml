@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.espol.controller.EliminarPuestoFXMLController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="105.0" style="-fx-background-color: Coral;">
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="59.0" layoutX="22.0" layoutY="304.0" onMouseClicked="#regresar" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../../../../Imagenes/56805.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="40.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SALIR">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="77.0" fitWidth="69.0" layoutX="18.0" layoutY="20.0" onMouseClicked="#registroP" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Imagenes/45856.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="77.0" fitWidth="64.0" focusTraversable="true" layoutX="20.0" layoutY="198.0" onMouseClicked="#regresarP" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Imagenes/73845.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="21.0" layoutY="114.0" onMouseClicked="#registroM" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Imagenes/46196.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="23.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PACIENTE">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="29.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEDICO">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="28.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUESTO">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="154.0" layoutY="73.0" prefHeight="203.0" prefWidth="346.0" style="-fx-background-color: lightGray;">
+         <children>
+            <ComboBox fx:id="cbxM" layoutX="58.0" layoutY="37.0" prefHeight="28.0" prefWidth="231.0" />
+            <Button layoutX="100.0" layoutY="119.0" mnemonicParsing="false" onMouseClicked="#eliminarPuesto" style="-fx-background-color: coral;" text="ELIMINAR PUESTO" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="60.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puestos:">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text layoutX="164.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminación de Puesto">
+         <font>
+            <Font name="Times New Roman" size="38.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="101.0" fitWidth="105.0" layoutX="475.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Imagenes/reconocimientos-medicos-pamplona-renovar-carnet.600.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
